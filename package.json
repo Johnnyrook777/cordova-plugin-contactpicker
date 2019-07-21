@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-contact-picker",
+  "version": "0.1.1",
+  "description": "Cordova plugin to choose a contact from the native address book",
+  "cordova": {
+    "id": "cordova-plugin-contact-picker",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johnnyrook777/cordova-plugin-contactpicker.git"
+  },
+  "keywords": [
+    "cordova",
+    "android",
+    "ios",
+    "phone",
+    "number",
+    "contact",
+    "picker",
+    "email",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Mark Wheeldon (https://github.com/Johnnyrook777)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Johnnyrook777/cordova-plugin-contactpicker/issues"
+  },
+  "homepage": "https://github.com/Johnnyrook777/cordova-plugin-contactpicker#readme"
+}

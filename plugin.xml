@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-contact-picker"
+    version="1.0.0">
+
+  <name>Contact Picker</name>
+
+  <description>
+    This plugin allows you choose a contact from the native address book
+  </description>
+
+  <author>Mark Wheeldon</author>
+
+  <license>MIT</license>
+
+  <keywords>Contact, Picker, Phone, Email</keywords>
+
+  <repo>https://github.com/Johnnyrook777/cordova-plugin-contactpicker</repo>
+
+  <issue>https://github.com/Johnnyrook777/cordova-plugin-contactpicker/issues</issue>
+
+  <js-module src="www/contactPicker.js" name="contactPicker">
+    <clobbers target="contactPicker"/>
+  </js-module>
+
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+		    <feature name="ContactPicker">
+		        <param name="ios-package" value="CDVContactPicker"/>
+		    </feature>
+	    </config-file>
+
+	    <header-file src="src/ios/CDVContactPicker.h" />
+	    <source-file src="src/ios/CDVContactPicker.m" />
+	  
+	  
+	    <framework src="AddressBook.framework" />
+        <framework src="AddressBookUI.framework" />
+
+    </platform>
+    
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ContactPicker">
+                <param name="android-package" value="com.mobito.cordova.contactpicker"/>
+            </feature>
+        </config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.READ_CONTACTS" />
+        </config-file>
+        
+        <source-file src="src/android/ContactPicker.java" target-dir="src/com/mobito/cordova/contactpicker" />
+    </platform>
+
+
+</plugin>
