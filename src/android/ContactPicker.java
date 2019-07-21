@@ -13,7 +13,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.provider.ContactsContract;
 
-public class ContactNumberPicker extends CordovaPlugin {
+public class ContactPicker extends CordovaPlugin {
 
     private Context context;
     private CallbackContext callbackContext;
