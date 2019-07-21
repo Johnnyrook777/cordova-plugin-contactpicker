@@ -21,8 +21,8 @@
 
   <issue>https://github.com/Johnnyrook777/cordova-plugin-contactpicker/issues</issue>
 
-  <js-module src="www/contactPicker.js" name="contactPicker">
-    <clobbers target="contactPicker"/>
+  <js-module src="www/contactPicker.js" name="ContactPicker">
+    <clobbers target="ContactPicker"/>
   </js-module>
 
 
